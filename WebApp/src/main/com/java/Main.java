@@ -81,7 +81,6 @@ public class Main extends HttpServlet {
                 return "It's currently " + LocalTime.now().format(DateTimeFormatter.ofPattern("hh:mm a"));
             case "what is today's date?":
                 return "Today's date is " + LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
-            // Additional cases
             case "what's your age?":
                 return "I don't have an age as I am a virtual assistant!";
             case "what is the capital of France?":
@@ -113,8 +112,6 @@ public class Main extends HttpServlet {
                 "In the end, it's not the years in your life that count. It's the life in your years. - Abraham Lincoln",
                 "Life is what happens when you're busy making other plans. - John Lennon"
         };
-
-        // Return a random quote from the array
         return quotes[random.nextInt(quotes.length)];
     }
 
@@ -317,7 +314,6 @@ public class Main extends HttpServlet {
                 "Why was the broom late? It overswept!",
                 "What's orange and sounds like a parrot? A carrot"
         };
-        // Return a random joke from the array
         return jokes[random.nextInt(jokes.length)];
     }
 }
